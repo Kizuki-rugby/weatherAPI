@@ -1,4 +1,4 @@
-const access_key = "c16cd0d608ce7d0c8302c50430918068";
+const access_key = "0fec2ac7f59ccaa9e3e7798d32dc6f8b";
 const form = document.querySelector('form');
 const locationInput = document.querySelector('input[type=text]');
 const locationElement = document.querySelector('.location');
@@ -6,8 +6,8 @@ const temperatureElement = document.querySelector('.degree');
 const descriptionElement = document.querySelector('.forecast');
 const weatherInfo = document.querySelector('.weather-info');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   const location = locationInput.value;
   const url = `http://api.weatherstack.com/current?access_key=${access_key}&query=${location}`;
 
